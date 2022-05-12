@@ -24,7 +24,7 @@ order by  count(LaunchID) desc
 
 
 
--- Question 4. Bonus (not required): How do 2021 GDP (in USD) values compare to that country’s number of payloads for that year? Use any data source necessary in combination with the data from the SpaceX API.
+-- Question 4. Bonus (not required): How do 2021 GDP (in USD) values compare to that countryâ€™s number of payloads for that year? Use any data source necessary in combination with the data from the SpaceX API.
 
 select distinct year(L.Date_UTC) as YEAR, G.Country,G.GDP_In_Million_USD from Payloads P
 join Launches L on P.LaunchID = L.Launch_ID
@@ -32,21 +32,3 @@ join GDP G on P.Nationality = G.Country
 where year(L.Date_UTC) = '2021'
 order by G.GDP_In_Million_USD
 
-
-
-
-
-
-
-
-
-
-
-
---By nikhil
-
-SELECT sxl.Ship_Name, COUNT(LandingResult)
-FROM SpaceXLanding sxl
-WHERE sxl.LandingResult = '1'
-GROUP BY sxl.Ship_Name
-ORDER BY COUNT(sxl.Ship_Name) DESC
