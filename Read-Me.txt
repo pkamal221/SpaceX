@@ -55,7 +55,9 @@
 
 
 3. Once Step-2 completes , all Python Script ran successfully then  Run the query file "SpaceX_Query.sql" on RDS Instance (database - SpaceX) using application (Microsoft SQL Server Management Studio) .
-	In the file SpaceX_Query.sql , there is total 3 queries, You can run the Query one-by-one.
+In the file SpaceX_Query.sql , there is total 3 queries, You can run the Query one-by-one.
+
+
 
 
                                                                             ** Thank you for reading **
